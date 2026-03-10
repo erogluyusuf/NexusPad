@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NexusPad Controller</title>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <style>
+        body { font-family: sans-serif; background: #121212; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; overflow: hidden; }
+        #status { margin-bottom: 20px; font-size: 1.2rem; }
+        .data-box { background: #1e1e1e; padding: 20px; border-radius: 10px; text-align: center; width: 80%; }
+        button { padding: 15px 30px; font-size: 1rem; background: #007bff; border: none; color: white; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div id="status">Bağlantı Bekleniyor...</div>
+    <div class="data-box">
+        <p>Roll: <span id="roll">0</span></p>
+        <p>Pitch: <span id="pitch">0</span></p>
+        <p>Yaw: <span id="yaw">0</span></p>
+        <button id="start-btn">Sensörü Başlat</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

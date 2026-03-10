@@ -1,0 +1,27 @@
+name: mobile_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  socket_io_client: ^3.1.4
+  sensors_plus: ^7.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Uygulama içindeki resim klasörünü projeye tanıtıyoruz
+  assets:
+    - assets/
