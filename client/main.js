@@ -652,6 +652,6 @@ window.addEventListener('resize', () => {
         raceRenderer.setSize(window.innerWidth, window.innerHeight);
     } else if (currentMode.startsWith('flight') && flightDiv) {
         flightDiv.width = window.innerWidth;
-        flightDiv.height = window.innerHeight;
+        flightDiv.height = window.innerHeight; 
     }
 });
